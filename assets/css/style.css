@@ -1,0 +1,19 @@
+/**************************************************
+/* Homepage
+/**************************************************/
+
+/*
+/* Section .section-ilivedesign
+/*************************************************/
+.section-ilivedesign{
+	background-image: url(../images/oxo_bg.svg);
+	background-repeat: repeat;
+	background-position: 0 0;
+	background-color: #ffffff;
+}
+.section-ilivedesign .aione-icon.animated {
+	display: inline-block;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
