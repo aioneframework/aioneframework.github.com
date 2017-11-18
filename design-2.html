@@ -7,7 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700,800,900">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/vendor.js"></script>
 	<script type="text/javascript" src="http://aioneframework.com/aioneframework/assets/js/aione.js"></script>
+	
 	<style type="text/css">
 		.aione-banner-bg{
 			background-image: url('assets/images/crmbg.jpg');
@@ -35,6 +37,65 @@
 			background-color: transparent;
 			border-bottom: 2px solid #f2f2f2 
 		}
+		.aione-features-bg{
+			/*background-image: url('assets/images/features-bg.png');*/
+		}
+		.aione-levels{
+			position: relative;
+			height: 600px;
+			width: 600px;
+		}
+		.aione-levels > div{
+			position: absolute;
+			 -webkit-animation-iteration-count:infinite;
+		    -webkit-animation-timing-function:linear;
+		    -webkit-animation-name:orbit;
+		    -webkit-animation-duration:50s;
+		}
+		.aione-levels > .level-n{
+			height: 600px;
+			width: 600px;
+			border-radius: 300px;
+			border: 1px solid rgba(60, 217, 197, .5);
+		}
+		.aione-levels > .level-m{
+			border: 1px solid rgba(204, 198, 222, .5);
+			border-radius: 230px;
+			height: 460px;
+			left: calc(50% - 230px);
+			top: calc(50% - 230px);			
+			width: 460px;
+		}
+		.aione-levels > .level-l{
+			border: 1px solid rgba(247, 195, 206, .5);
+			border-radius: 160px;
+			height: 320px;
+			left: calc(50% - 160px);
+			top: calc(50% - 160px);
+			width: 320px;
+		}
+		.aione-levels > .level-k{
+			border: 1px solid rgba(251, 193, 174, .5);
+			border-radius: 100px;
+			height: 200px;
+			left: calc(50% - 100px);
+			top: calc(50% - 100px);
+			width: 200px;
+
+		}
+		.aione-levels .electron{
+			height: 10px;
+			width: 10px;
+			border:4px solid teal;
+			border-radius:50%;
+			position: absolute;  
+			left: 50%;
+			top: -6px			
+		}
+
+		@-webkit-keyframes orbit { 
+		from { -webkit-transform:rotate(0deg) } 
+		to { -webkit-transform:rotate(360deg) } }
 	</style>
 </head>
 
@@ -103,7 +164,7 @@
 						<i class="fa fa-ravelry font-size-40"></i>
 					</div>
 					<div>
-						<h5>Easy to use</h5>
+						<h5>Ready to use components</h5>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan ante</p>
 					</div>
 					
@@ -113,7 +174,7 @@
 						<i class="fa fa-ravelry font-size-40"></i>
 					</div>
 					<div>
-						<h5>Easy to use</h5>
+						<h5>Mobile first</h5>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan ante</p>
 					</div>
 					
@@ -125,7 +186,7 @@
 						<i class="fa fa-ravelry font-size-40"></i>
 					</div>
 					<div>
-						<h5>Easy to use</h5>
+						<h5>Platform independent</h5>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan ante</p>
 					</div>
 					
@@ -135,7 +196,7 @@
 						<i class="fa fa-ravelry font-size-40"></i>
 					</div>
 					<div>
-						<h5>Easy to use</h5>
+						<h5>Usage with any framework</h5>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan ante</p>
 					</div>
 					
@@ -145,11 +206,364 @@
 						<i class="fa fa-ravelry font-size-40"></i>
 					</div>
 					<div>
-						<h5>Easy to use</h5>
+						<h5>Easy to learn</h5>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan ante</p>
 					</div>
 					
 				</div>
+			</div>
+		</div>
+		<div class="m-100" style="position: relative;">
+			<div class="ar mb-40">
+				<div class="ac l25 ph-40 mt-80">
+					<a class="aione-border display-inline-block" style="overflow: hidden;    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);">
+						<img src="https://iz.zohostatic.com/sites/default/files/zs00082.png">	
+					</a>
+					
+				</div>
+				<div class="ac l25 ph-40">
+					<a class="aione-border display-inline-block" style="overflow: hidden;    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);">
+						<img src="https://iz.zohostatic.com/sites/default/files/zs00083.png">	
+					</a>
+					
+				</div>
+				<div class="ac l25 ph-40">
+					<a class="aione-border display-inline-block" style="overflow: hidden;    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);">
+						<img src="https://iz.zohostatic.com/sites/default/files/zs00084.png">	
+					</a>
+					
+				</div>
+				<div class="ac l25 ph-40 mt-80">
+					<a class="aione-border display-inline-block" style="overflow: hidden;    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);">
+						<img src="https://iz.zohostatic.com/sites/default/files/zs00085.png">	
+					</a>
+					
+				</div>
+			</div>
+			<div class="ar">
+				<div class="ac l25 ph-40">
+					<a class="aione-border display-inline-block" style="overflow: hidden;    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);">
+						<img src="https://iz.zohostatic.com/sites/default/files/zs00086.png">	
+					</a>
+					
+				</div>
+				<div class="ac l25 ph-40 mt-80">
+					<a class="aione-border display-inline-block" style="overflow: hidden;    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);">
+						<img src="https://iz.zohostatic.com/sites/default/files/zs00087.png">	
+					</a>
+					
+				</div>
+				<div class="ac l25 ph-40 mt-80">
+					<a class="aione-border display-inline-block" style="overflow: hidden;    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);">
+						<img src="https://iz.zohostatic.com/sites/default/files/zs00088.png">	
+					</a>
+					
+				</div>
+				<div class="ac l25 ph-40">
+					<a class="aione-border display-inline-block" style="overflow: hidden;    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);">
+						<img src="https://iz.zohostatic.com/sites/default/files/zs00089.png">	
+					</a>
+					
+				</div>
+			</div>
+			<div style="position: absolute;left: calc(50% - 50px);top: calc(50% - 10px)">
+				<h5 class="m-0">Our Themes</h5>
+			</div>
+		</div>
+		<div class="mh-100 mb-100 aione-features-bg " style="height: 600px">
+			<h5 class="aione-align-center">Aione Framework integrates with</h5>
+			<div class="ar mv-20">
+				<div class="ac l50 aione-levels">
+					<div class="level-n">
+						<div class="electron"></div>
+						<div class="electron"></div>
+					</div>
+					<div class="level-m">
+						<div class="electron"></div>
+					</div>
+					<div class="level-l">
+						<div class="electron"></div>
+					</div>
+					<div class="level-k">
+						<div class="electron" ></div>
+					</div>
+				</div>
+				<div class="ac l50 pv-70 pl-60">
+					<h5 class="mb-30">Aione Framework integrates with</h5>
+					<ul>
+						<li class="mb-20"><i class="fa fa-check"></i> Lorem ipsum dolor sit amet.</li>
+						<li class="mb-20"><i class="fa fa-check"></i> Lorem ipsum dolor sit amet.</li>
+						<li class="mb-20"><i class="fa fa-check"></i> Lorem ipsum dolor sit amet.</li>
+						<li class="mb-20"><i class="fa fa-check"></i> Lorem ipsum dolor sit amet.</li>
+						<li class="mb-20"><i class="fa fa-check"></i> Lorem ipsum dolor sit amet.</li>
+						<li class="mb-20"><i class="fa fa-check"></i> Lorem ipsum dolor sit amet.</li>
+						<li class="mb-20"><i class="fa fa-check"></i> Lorem ipsum dolor sit amet.</li>
+						<li class="mb-20"><i class="fa fa-check"></i> Lorem ipsum dolor sit amet.</li>
+						<li class="mb-20"><i class="fa fa-check"></i> Lorem ipsum dolor sit amet.</li>
+						<li class="mb-20"><i class="fa fa-check"></i> Lorem ipsum dolor sit amet.</li>
+						<li class="mb-20"><i class="fa fa-check"></i> Lorem ipsum dolor sit amet.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="aione-align-center pv-100">
+			<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+			<img src="assets/images/integrates.png" style="width: 60%">
+		</div>
+		<div class="  pv-100">
+			<h5 class="aione-align-center">Aione Framework Consist of</h5>
+			<div class="ar mh-100">
+				<div class="ac l33 p-30">
+					<div class="aione-border p-10 mb-20">
+						<div class="aione-border-bottom pb-10 font-size-18 light-blue darken-1">
+							Accordions
+						</div>
+						<div class="pt-10">
+							<div class="aione-accordion">
+								<div class="aione-item">
+									<div class="aione-item-header">
+										Item 1
+									</div>
+									<div class="aione-item-content">
+										This is the content of the accordion
+									</div>
+								</div>
+								<div class="aione-item">
+									<div class="aione-item-header">
+										Item 2
+									</div>
+									<div class="aione-item-content">
+										This is the content of the accordion
+									</div>
+								</div>
+								<div class="aione-item">
+									<div class="aione-item-header">
+										Item 3
+									</div>
+									<div class="aione-item-content">
+										This is the content of the accordion
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aione-border p-10 mb-20">
+						<div class="aione-border-bottom pb-10 font-size-18 light-blue darken-1">
+							Cards
+						</div>
+						<div class="pt-10">
+							
+						</div>
+					</div>
+					<div class="aione-border p-10 mb-20">
+						<div class="aione-border-bottom pb-10 font-size-18 light-blue darken-1">
+							Dropdowns
+						</div>
+						<div class="pt-10">
+							
+						</div>
+					</div>
+				</div>
+				<div class="ac l33 p-30">
+					<div class="aione-border p-10 mb-20">
+						<div class="aione-border-bottom pb-10 font-size-18 light-blue darken-1">
+							Form (Clean Design)
+						</div>
+						<div class="pt-10">
+							<div id="aione_form_wrapper_212" class="aione-form-wrapper aione-form-theme- aione-form-label-position- aione-form-style-   ">
+									<div class="aione-row">
+												<div id="aione_form_content" class="aione-form-content">
+											<div class="aione-row aione-">
+															
+																<div id="aione_form_section_406" class="aione-form-section non-repeater">
+									<div class="aione-row">
+									
+												<div id="aione_form_section_content" class="aione-form-section-content">
+											<div class="aione-row ar">
+
+																					<div id="field_1707" data-conditions="0" data-field-type="text" class="field-wrapper ac field-wrapper-name field-wrapper-type-text ">
+														<div id="field_label_name" class="field-label">
+
+												<label for="input_name">
+																			<h4 class="field-title" id="Name">Name</h4>
+																						</label>
+
+											</div><!-- field label-->
+												
+
+									<div id="field_name" class="field field-type-text">
+									
+													<input class="input-name" id="input_name" placeholder="" data-validation="" name="name" type="text"> 
+
+															</div><!-- field -->
+								</div><!-- field wrapper -->
+																					<div id="field_1708" data-conditions="0" data-field-type="text" class="field-wrapper ac field-wrapper-email field-wrapper-type-text ">
+														<div id="field_label_email" class="field-label">
+
+												<label for="input_email">
+																			<h4 class="field-title" id="Email">Email</h4>
+																						</label>
+
+											</div><!-- field label-->
+												
+
+									<div id="field_email" class="field field-type-text">
+									
+													<input class="input-email" id="input_email" placeholder="" data-validation="" name="email" type="text"> 
+
+															</div><!-- field -->
+								</div><!-- field wrapper -->
+																					<div id="field_1709" data-conditions="0" data-field-type="textarea" class="field-wrapper ac field-wrapper-message field-wrapper-type-textarea ">
+														<div id="field_label_message" class="field-label">
+
+												<label for="input_message">
+																			<h4 class="field-title" id="Message">Message</h4>
+																						</label>
+
+											</div><!-- field label-->
+												
+
+									<div id="field_message" class="field field-type-textarea">
+									
+													<textarea class="message" id="input_message" rows="3" cols="100" name="message"></textarea>
+
+															</div><!-- field -->
+								</div><!-- field wrapper -->
+																					<div id="field_1710" data-conditions="0" data-field-type="button" class="field-wrapper ac field-wrapper-send field-wrapper-type-button ">
+														<div id="field_label_send" class="field-label">
+
+												<label for="input_send">
+																			
+																						</label>
+
+											</div><!-- field label-->
+												
+
+									<div id="field_send" class="field field-type-button">
+									
+													<input class="send" id="input_send" type="submit" value="Send">
+
+															</div><!-- field -->
+								</div><!-- field wrapper -->
+											
+											</div> <!-- .aione-row -->
+										</div> <!-- .aione-form-content -->
+
+									</div> <!-- .aione-row -->
+								</div> <!-- .aione-form-section -->
+
+											
+											</div> <!-- .aione-row -->
+										</div> <!-- .aione-form-content -->
+
+										
+									<textarea class="form_conditions" id="form_212" style="display: none;">[]</textarea>
+									</div> <!-- .aione-row -->
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="ac l33 p-30">
+					<div class="aione-border p-10 mb-20">
+						<div class="aione-border-bottom pb-10 font-size-18 light-blue darken-1">
+							Widgets
+						</div>
+						<div class="pt-10">
+							
+						</div>
+					</div>
+					<div class="aione-border p-10 mb-20">
+						<div class="aione-border-bottom pb-10 font-size-18 light-blue darken-1">
+							Cool Icons
+						</div>
+						<div class="pt-10">
+							
+						</div>
+					</div>
+					<div class="aione-border p-10 mb-20">
+						<div class="aione-border-bottom pb-10 font-size-18 light-blue darken-1">
+							Aione Messages
+						</div>
+						<div class="pt-10">
+							<div class="aione-message">
+					            <ul class="aione-messages">
+					               Lorem ipsum dolor sit amet
+					               
+					            </ul>
+					        </div>
+					        <div class="aione-message success">
+					            <ul class="aione-messages">
+					               Lorem ipsum dolor sit amet
+					            
+					            </ul>
+					        </div>
+					        <div class="aione-message warning">
+					            <ul class="aione-messages">
+					               Lorem ipsum dolor sit amet
+					            
+					            </ul>
+					        </div>
+					        <div class="aione-message error">
+					            <ul class="aione-messages">
+					               Lorem ipsum dolor sit amet
+					            
+					            </ul>
+					        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-blue-grey bg-darken-4 p-50">
+			<div class="ar aione-align-center aione-border-bottom pb-50">
+				<div class="ac l50">
+					<div class="ar">
+						<div class="ac l50">
+							<h5 class="grey lighten-3">Section of Footer</h5>
+							<ul>
+								<li class="mb-15">Lorem ipsum dolor</li>
+								<li class="mb-15">Lorem ipsum</li>
+								<li class="mb-15">Lorem ipsum dolor</li>
+								<li class="mb-15">Lorem </li>
+								<li class="mb-15">ipsum dolor</li>
+							</ul>
+						</div>
+						<div class="ac l50">
+							<h5 class="grey lighten-3">Section of Footer</h5>
+							<ul>
+								<li class="mb-15">Lorem ipsum dolor</li>
+								<li class="mb-15">Lorem ipsum</li>
+								<li class="mb-15">Lorem ipsum dolor</li>
+								<li class="mb-15">Lorem </li>
+								<li class="mb-15">ipsum dolor</li>
+							</ul>
+						</div>	
+					</div>
+					
+				</div>
+				<div class="ac l50 ">
+					<h5 class="grey lighten-3">How can we helps you?</h5>
+					<div id="field_1707" data-conditions="0" data-field-type="text" class="field-wrapper ac field-wrapper-name field-wrapper-type-text mv-10 ">
+						<div id="field_label_name" class="field-label">
+
+							
+						</div><!-- field label-->
+								
+
+						<div id="field_name" class="field field-type-text">
+						
+							<input style="width: 60%" class="input-name" id="input_name" placeholder="Enter Email" data-validation="" name="name" type="text"> 
+
+						</div><!-- field -->
+					</div><!-- field wrapper -->
+					<button>
+						Send Callback Request
+					</button>
+				</div>
+			</div>
+			<div class="pt-50 aione-align-center">
+				©2017 OXO Solutions.All rights reserved.
 			</div>
 		</div>
 	</div>
