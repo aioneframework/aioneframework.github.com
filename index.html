@@ -58,18 +58,22 @@
 		  top: 0%;
 		  opacity: 1;
 		}
-
-    </style>
+button:hover{
+	border: 1px solid grey;
+}
+.aione-hover:hover{
+	border: 1px solid aliceblue;
+}
+</style>
 </head>
-
 <body>
 	<div id="aione_wrapper" class="aione-wrapper aione-layout- aione-theme-arcane">
 		<div class="aione-row">
 			<div>
 				<div class="ar p-30" style="position: absolute;top:0%;width: 100%;z-index: 9999">
 					<div class="ac l50">
-						<img src="http://aioneframework.com/resources/logo/aione-framework-logo-small.png">
-				    	<img src="assets/images/aione-framework-logo-small.png" style="width: 300px">
+						<img src="http://aioneframework.com/resources/logo/aione-framework-logo-small.png" style="width: 400px">
+				    	<!-- <img src="assets/images/aione-framework-logo-small.png" style="width: 300px"> -->
 					</div>
 					<dir class="ac l50 m-0">
 						<nav id="aione_nav" class="aione-nav horizontal dual-line aione-align-right">
@@ -87,50 +91,50 @@
 			<div id="aione_main" class="aione-main p-0">
 				<div class="aione-slider owl-carousel owl-theme gallery aione-theme">
 	                <div class="" style="position: relative;">
-	                    <img src="http://aioneframework.com/resources/backgrounds/background-25301.jpg" />
-	                    
+	                   <!--  <img src="http://aioneframework.com/resources/backgrounds/laptop-2434393_1920.jpg" /> -->
+	                    <img src="assets/images/laptop-2434393_1920.jpg" />
 	                    <div style="position: absolute;top:37%;width:600px" class="white pl-100">
-	                    	<div class="white font-size-40 font-weight-700">STRONG TRANSPORT</div>
-	                    	<div class="white font-size-28 mv-20">Fast and Safe Transport</div>
-	                    	<p class="line-height-22">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur consequat arcu, sit amet lobortis massa. Suspendisse sit amet mi.</p>
-	                    	<button class="mv-10">Read More</button>
-	                    	<button class="mv-10 bg-white grey darken-2 ml-10">Contact Us</button>
+	                    	<div class="font-size-40 font-weight-700" style="color: rgb(80, 80, 80);">STRONG TRANSPORT</div>
+	                    	<div class=" font-size-28 mv-20" style="color: #676767;">Fast and Safe Transport</div>
+	                    	<p class="line-height-22" style="color: #454545;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur consequat arcu, sit amet lobortis massa. Suspendisse sit amet mi.</p>
+	                    	<button class="mv-20 border-width-1 aione-border border-grey lighten-4 black hover" style="background-color:#d5dcdc;">Read More</button>
+	                    	<!-- <button class="mv-10 bg-white grey darken-2 ml-10">Contact Us</button> -->
 	                    </div>
 	                </div>
 	                <div class="" style="position: relative;">
-	                    <img src="http://aioneframework.com/resources/backgrounds/background-25308.jpg" />
-
+	                   <!--  <img src="assets/images/backgroundphoto.jpg" /> -->
+                       <img src="assets/images/computer-2593899_1920.jpg" />
 	                    <div style="position: absolute;top:37%;width:600px" class="white pl-100">
 	                    	<div class="white font-size-40 font-weight-700">STRONG TRANSPORT</div>
-	                    	<div class="white font-size-28 mv-20">Fast and Safe Transport</div>
-	                    	<p class="line-height-22">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur consequat arcu, sit amet lobortis massa. Suspendisse sit amet mi.</p>
-	                    	<button class="mv-10">Read More</button>
-	                    	<button class="mv-10 bg-white grey darken-2 ml-10">Contact Us</button>
+	                    	<div class="white font-size-28 mv-20" >Fast and Safe Transport</div>
+	                    	<p class="white line-height-22">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur consequat arcu, sit amet lobortis massa. Suspendisse sit amet mi.</p>
+	                    	<button class="mv-20 border-width-1 aione-border border-grey lighten-4 bg-white black hover" style="background-color:#e4e7ee;">Read More</button>
+	                    	<!-- <button class="mv-10 bg-white grey darken-2 ml-10">Contact Us</button> -->
 	                    </div>
 	                </div>
 	                
 	            </div>
-	            <div class="bg-grey bg-lighten-3 aione-align-center p-50">
+	            <div class="aione-align-center p-50">
 	            	<div class="mb-20">
 	            		<div class="font-size-28 pv-20">Our Services</div>
 	            		<p class="line-height-22">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur consequat arcu,<br> sit amet lobortis massa. Suspendisse sit amet mi.</p>
 	            	</div>
 	            	<div class="ar ">
-	            		<div class="ac l33">
+	            		<div class="ac l33 aione-hover">
 	            			<div class="bg-white p-30">
 	            				<i class="fa fa-truck light-blue darken-2 font-size-28 mb-30"></i>
 	            				<div class="font-size-16 mb-20">FIRST SERVICE</div>
 	            				<p class="line-height-22">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur.</p>
 	            			</div>	
 	            		</div>
-	            		<div class="ac l33">
+	            		<div class="ac l33 aione-hover">
 	            			<div class="bg-white p-30">
 	            				<i class="fa fa-plane light-blue darken-2 font-size-28 mb-30"></i>
 	            				<div class="font-size-16 mb-20">FIRST SERVICE</div>
 	            				<p class="line-height-22">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur.</p>
 	            			</div>
 	            		</div>
-	            		<div class="ac l33">
+	            		<div class="ac l33 aione-hover">
 	            			<div class="bg-white p-30">
 	            				<i class="fa fa-train light-blue darken-2 font-size-28 mb-30"></i>
 	            				<div class="font-size-16 mb-20">FIRST SERVICE</div>
@@ -142,7 +146,7 @@
 	            </div>
 	            <div class="p-50">
 	            	<div class="ar">
-	            		<div class="ac l50">
+	            		<div class="ac l50 aione-border-right">
 	            			<div class="font-size-28 pv-20">Testomonials</div>
 	            			<div class="aione-border p-20">
 	            				<div class="line-height-22 pb-20 aione-border-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur.
