@@ -39,6 +39,26 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+.intro-content{
+	position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 60%;
+    z-index: 9999;
+    background-color: transparent;
+}
+.oxo-color{
+	color: #168dc5;
+}
+.oxo-color:hover{
+	color: #1570a6;
+}
+.primary-color{
+	color: #1570a6;
+}
+.secondary-color{
+	color: #414043;
+}
 /*
 /* Section .section-ilivedesign
 /*************************************************/
