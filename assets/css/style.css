@@ -26,9 +26,15 @@
     margin: 0;
     border-top: none;
 }
+.aione-footer.dark {
+    background-color: #23282d;
+}
 .aione-copyright {
     margin: 0;
     border-top: none;
+}
+.aione-copyright.dark {
+    background-color: #121519;
 }
 .intro{
 	min-height: 450px;
