@@ -1,6 +1,9 @@
 /**************************************************
 /* Homepage
 /**************************************************/
+.tabs.tabs-transparent .tab a{
+    color: #333333;
+}
 .page-home .aione-header {
     position: absolute;
     top: 0;
