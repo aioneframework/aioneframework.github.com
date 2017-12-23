@@ -51,6 +51,148 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="assets/js/script.js"></script>
 </head>
+<style type="text/css">
+    
+body {
+  /* font-family: Arial;
+  padding: 25px;
+  background-color: #f5f5f5;
+  color: #808080;
+  text-align: center;  */
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+/* Column Grids */
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+
+/* .col_half { width: 49%; }
+.col_third { width: 32%; }
+
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+    position: relative;
+    display:inline;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 20px;
+} */
+/* Column Grids End */
+
+/* .wrapper { width: 980px; margin: 30px auto; position: relative;}
+ */.counter {padding: 20px 0; border-radius: 5px;}
+.count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+.count-text { font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+
+</style>
+<script>
+    (function ($) {
+    $.fn.countTo = function (options) {
+        options = options || {};
+        
+        return $(this).each(function () {
+            // set options for current element
+            var settings = $.extend({}, $.fn.countTo.defaults, {
+                from:            $(this).data('from'),
+                to:              $(this).data('to'),
+                speed:           $(this).data('speed'),
+                refreshInterval: $(this).data('refresh-interval'),
+                decimals:        $(this).data('decimals')
+            }, options);
+            
+            // how many times to update the value, and how much to increment the value on each update
+            var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                increment = (settings.to - settings.from) / loops;
+            
+            // references & variables that will change with each update
+            var self = this,
+                $self = $(this),
+                loopCount = 0,
+                value = settings.from,
+                data = $self.data('countTo') || {};
+            
+            $self.data('countTo', data);
+            
+            // if an existing interval can be found, clear it first
+            if (data.interval) {
+                clearInterval(data.interval);
+            }
+            data.interval = setInterval(updateTimer, settings.refreshInterval);
+            
+            // initialize the element with the starting value
+            render(value);
+            
+            function updateTimer() {
+                value += increment;
+                loopCount++;
+                
+                render(value);
+                
+                if (typeof(settings.onUpdate) == 'function') {
+                    settings.onUpdate.call(self, value);
+                }
+                
+                if (loopCount >= loops) {
+                    // remove the interval
+                    $self.removeData('countTo');
+                    clearInterval(data.interval);
+                    value = settings.to;
+                    
+                    if (typeof(settings.onComplete) == 'function') {
+                        settings.onComplete.call(self, value);
+                    }
+                }
+            }
+            
+            function render(value) {
+                var formattedValue = settings.formatter.call(self, value, settings);
+                $self.html('+'+formattedValue);
+            }
+        });
+    };
+    
+    $.fn.countTo.defaults = {
+        from: 0,               // the number the element should start at
+        to: 0,                 // the number the element should end at
+        speed: 1000,           // how long it should take to count between the target numbers
+        refreshInterval: 100,  // how often the element should be updated
+        decimals: 0,           // the number of decimal places to show
+        formatter: formatter,  // handler for formatting the value before rendering
+        onUpdate: null,        // callback method for every time the element is updated
+        onComplete: null       // callback method for when the element finishes updating
+    };
+    
+    function formatter(value, settings) {
+        return value.toFixed(settings.decimals);
+    }
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+    formatter: function (value, options) {
+      return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+    }
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+    var $this = $(this);
+    options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+    $this.countTo(options);
+  }
+});
+    </script>
 <body>
     <div id="aione_wrapper" class="aione-wrapper page-about layout-header-top aione-layout-wide aione-theme-arcane">
         <div class="wrapper">
@@ -73,11 +215,11 @@
                                     </section> 
                                      <section class="content">
                                      	<div class="ar">
-											<div class="ac s100 m100 l100 p-0">
+										                  	<div class="ac s100 m100 l100 p-0">
                                      			<div class="aione-align-center p-50 bg-grey bg-lighten-4"> 
                                      				<div class="p-30">
 	                                     				<h3 class="black">What is <span class="primary-color">Aione</span>Framework?</h3>
-		                                     			<h5 class="p-30 ">Aione Framework is one of lightweight front end framework to make your HTML more beautiful. AioneFramework 1.0 stabled and flexible CSS framework.</h5>
+		                                     			<h5 class="p-30 "><span><i class="fa fa-quotes"></i></span>Aione Framework is one of lightweight front end framework to make your HTML more beautiful. AioneFramework 1.0 stabled and flexible CSS framework.</h5>
                                      				</div>
                                      				<div class="aione-border-bottom"></div>
 	                                     			<div class="p-30">
@@ -93,6 +235,28 @@
                                      		</div>
                                      	</div>
                                      </section>
+                                     <section>
+                                         <div class="ar m-50" >
+                                             <h3 style="color: #2c6fa6;" class="aione-align-center mb-30">Aioneframework Project stats</h3>
+                                             <div class="ac s100 m100 l100 p-20 aione-border border-width-30" style="background-image: url('https://t3.ftcdn.net/jpg/01/20/13/76/240_F_120137643_GY5Em4on64AxSSHNqXAnwyhBTynMLOyR.jpg');">
+
+                                               <div class="ac s100 m100 l33 counter ">
+                                                       <h2 class="timer count-title count-number white" data-to="300" data-speed="1500"></h2>
+                                                        <h5 class="count-text "><a href="#" class="white">Aione Developers</a></h5> 
+                                                    </div>
+
+                                                    <div class="ac s100 m100 l33 counter ">
+                                                      <h2 class="timer count-title count-number white" data-to="1700" data-speed="+1500"></h2>
+                                                       <h5 class="count-text "><a href="#" class="white">Contributor</a></h5> 
+                                                    </div>
+
+                                                    <div class="ac s100 m100 l33 counter ">
+                                                      <h2 class="timer count-title count-number white" data-to="11900" data-speed="1500"></h2>
+                                                       <h5 class="count-text "><a href="#" class="white">Monthly Downloads</a></h5> 
+                                                    </div>
+                                              </div>
+                                         </div>
+                                     </section>
                                     <section id="technologies" class="technologies">
                                     	<div class="ar m-50 ">
                                     		<div class="ac l100 aione-align-center">
@@ -103,67 +267,67 @@
                                     		<div class="ac s100 m100 l33 mt-20">
                                     			<div class="aione-border " style="box-shadow: 4px 11px 15px 1px #f3f1f1;">
                                     				<h4 class="aione-border-bottom pb-20 pt-10 aione-align-center black">MOBILE APP DEVELOPMENT</h4>
-													<div class="ph-26 pv-20">
-														<span class=""><i class="fa fa-android font-size-16 white ph-11 pv-9 aione-circle" style="background-color:#8BC34A;"></i></span>
-														<span class="font-size-17 black">Android</span><br><br>
-														<span class=""><i class="fa fa-apple bg-grey bg-lighten-1 font-size-16 white ph-11 pv-9  aione-circle" ></i></span>
-														<span class="font-size-17 black">iOS</span><br><br>
-														<span class=""><i class="fa fa-mobile bg-black font-size-16 white ph-13 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">Phonegap</span>
-														<br><br>
-														<span class=""><i class="fa fa-windows bg-light-blue font-size-16 white ph-9 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">Laravel</span>
-														<br><br>
-														<span class=""><i class="fa fa-html5 bg-orange font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">HTML5 </span>
-														<br><br>
-														<span class=""><i class="fa fa-dropbox bg-red bg-lighten-1 font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">Web App </span>
-													</div>
+                  													<div class="ph-26 pv-20">
+                  														<span class=""><i class="fa fa-android font-size-16 white ph-11 pv-9 aione-circle" style="background-color:#8BC34A;"></i></span>
+                  														<span class="font-size-17 black">Android</span><br><br>
+                  														<span class=""><i class="fa fa-apple bg-grey bg-lighten-1 font-size-16 white ph-11 pv-9  aione-circle" ></i></span>
+                  														<span class="font-size-17 black">iOS</span><br><br>
+                  														<span class=""><i class="fa fa-mobile bg-black font-size-16 white ph-13 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">Phonegap</span>
+                  														<br><br>
+                  														<span class=""><i class="fa fa-windows bg-light-blue font-size-16 white ph-9 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">Laravel</span>
+                  														<br><br>
+                  														<span class=""><i class="fa fa-html5 bg-orange font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">HTML5 </span>
+                  														<br><br>
+                  														<span class=""><i class="fa fa-dropbox bg-red bg-lighten-1 font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">Web App </span>
+                  													</div>
                                     			</div>
                                     		</div>
                                     		<div class="ac s100 m100 l33 mt-20">
                                     			<div class="aione-border " style="box-shadow: 4px 11px 15px 1px #f3f1f1;">
                                     				<h4 class="aione-border-bottom pb-20 pt-10 aione-align-center black">MOBILE APP DEVELOPMENT</h4>
-													<div class="ph-26 pv-20">
-														<span class=""><i class="fa fa-android font-size-16 white ph-11 pv-9 aione-circle" style="background-color:#8BC34A;"></i></span>
-														<span class="font-size-17 black">Android</span><br><br>
-														<span class=""><i class="fa fa-apple bg-grey bg-lighten-1 font-size-16 white ph-11 pv-9  aione-circle" ></i></span>
-														<span class="font-size-17 black">iOS</span><br><br>
-														<span class=""><i class="fa fa-mobile bg-black font-size-16 white ph-13 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">Phonegap</span>
-														<br><br>
-														<span class=""><i class="fa fa-windows bg-light-blue font-size-16 white ph-9 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">Laravel</span>
-														<br><br>
-														<span class=""><i class="fa fa-html5 bg-orange font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">HTML5 </span>
-														<br><br>
-														<span class=""><i class="fa fa-dropbox bg-red bg-lighten-1 font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">Web App </span>
-													</div>
+                  													<div class="ph-26 pv-20">
+                  														<span class=""><i class="fa fa-android font-size-16 white ph-11 pv-9 aione-circle" style="background-color:#8BC34A;"></i></span>
+                  														<span class="font-size-17 black">Android</span><br><br>
+                  														<span class=""><i class="fa fa-apple bg-grey bg-lighten-1 font-size-16 white ph-11 pv-9  aione-circle" ></i></span>
+                  														<span class="font-size-17 black">iOS</span><br><br>
+                  														<span class=""><i class="fa fa-mobile bg-black font-size-16 white ph-13 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">Phonegap</span>
+                  														<br><br>
+                  														<span class=""><i class="fa fa-windows bg-light-blue font-size-16 white ph-9 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">Laravel</span>
+                  														<br><br>
+                  														<span class=""><i class="fa fa-html5 bg-orange font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">HTML5 </span>
+                  														<br><br>
+                  														<span class=""><i class="fa fa-dropbox bg-red bg-lighten-1 font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">Web App </span>
+                  													</div>
                                     			</div>
                                     		</div>
                                     		<div class="ac s100 m100 l33 mt-20">
                                     			<div class="aione-border " style="box-shadow: 4px 11px 15px 1px #f3f1f1;">
                                     				<h4 class="aione-border-bottom pb-20 pt-10 aione-align-center black">MOBILE APP DEVELOPMENT</h4>
-													<div class="ph-26 pv-20">
-														<span class=""><i class="fa fa-android font-size-16 white ph-11 pv-9 aione-circle" style="background-color:#8BC34A;"></i></span>
-														<span class="font-size-17 black">Android</span><br><br>
-														<span class=""><i class="fa fa-apple bg-grey bg-lighten-1 font-size-16 white ph-11 pv-9  aione-circle" ></i></span>
-														<span class="black">iOS</span><br><br>
-														<span class=""><i class="fa fa-mobile bg-black font-size-16 white ph-13 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">Phonegap</span>
-														<br><br>
-														<span class=""><i class="fa fa-windows bg-light-blue font-size-16 white ph-9 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">Laravel</span>
-														<br><br>
-														<span class=""><i class="fa fa-html5 bg-orange font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">HTML5 </span>
-														<br><br>
-														<span class=""><i class="fa fa-dropbox bg-red bg-lighten-1 font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
-														<span class="font-size-17 black">Web App </span>
-													</div>
+                  													<div class="ph-26 pv-20">
+                  														<span class=""><i class="fa fa-android font-size-16 white ph-11 pv-9 aione-circle" style="background-color:#8BC34A;"></i></span>
+                  														<span class="font-size-17 black">Android</span><br><br>
+                  														<span class=""><i class="fa fa-apple bg-grey bg-lighten-1 font-size-16 white ph-11 pv-9  aione-circle" ></i></span>
+                  														<span class="black">iOS</span><br><br>
+                  														<span class=""><i class="fa fa-mobile bg-black font-size-16 white ph-13 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">Phonegap</span>
+                  														<br><br>
+                  														<span class=""><i class="fa fa-windows bg-light-blue font-size-16 white ph-9 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">Laravel</span>
+                  														<br><br>
+                  														<span class=""><i class="fa fa-html5 bg-orange font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">HTML5 </span>
+                  														<br><br>
+                  														<span class=""><i class="fa fa-dropbox bg-red bg-lighten-1 font-size-16 white ph-10 pv-9 aione-circle" ></i></span>
+                  														<span class="font-size-17 black">Web App </span>
+                  													</div>
                                     			</div>
                                     		</div>
                                     	</div>
