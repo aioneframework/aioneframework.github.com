@@ -17,7 +17,7 @@
 	<meta name="robots" content="All" />
 	<meta name="application-name" content="Aione Framework">
 
-	<meta name="msapplication-TileColor" content="#FFFFFF" />
+<!-- 	<meta name="msapplication-TileColor" content="#FFFFFF" />
 	<meta name="msapplication-TileImage" content="assets/images/mstile-144x144.png" />
 	<meta name="msapplication-square70x70logo" content="assets/images/mstile-70x70.png" />
 	<meta name="msapplication-square150x150logo" content="assets/images/mstile-150x150.png" />
@@ -35,26 +35,21 @@
 	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/images/apple-touch-icon-152x152.png" />
 	<link rel="icon" type="image/png" href="assets/images/favicon-196x196.png" sizes="196x196" />
 	<link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" /> -->
 	<link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
-	<link rel="icon" type="image/png" href="assets/images/favicon-128.png" sizes="128x128" />
-
-
+	<!-- <link rel="icon" type="image/png" href="assets/images/favicon-128.png" sizes="128x128" />
+ -->
 	<link rel="stylesheet" type="text/css" href="aioneframework/assets/css/aione.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400">
-    <!-- Core-->
-	<script type="text/javascript" src="aioneframework/assets/js/vendor.js"></script>
-    <script type="text/javascript" src="aioneframework/assets/js/aione.js"></script>
-    <!-- Google Analytics-->
-    <script type="text/javascript" src="assets/js/ga.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400">
 	<!-- Theme Styles and Scripts-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script type="text/javascript" src="assets/js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
 </head>
 <body>
 	<div id="aione_wrapper" class="aione-wrapper page-home layout-header-top aione-layout-wide aione-theme-arcane">
 		<div class="wrapper">
-			<div id="aione_header" class="aione-header light">
+			<div id="aione_header" class="aione-header light load-template">
 			</div><!-- #aione-header -->
 
 			<div id="aione_main" class="aione-main fullwidth">
@@ -101,13 +96,19 @@
 							</div>
 						</div><!-- .wrapper -->
 					</div><!-- .aione-content -->
-					<div id="aione_footer" class="aione-footer dark">
+					<div id="aione_footer" class="aione-footer dark load-template">
 					</div><!-- .aione-footer -->
-					<div id="aione_copyright" class="aione-copyright dark">
+					<div id="aione_copyright" class="aione-copyright dark load-template">
 					</div><!-- .aione-copyright -->
 				</div><!-- .wrapper -->
 			</div>			
 		</div>
 	</div>
+
+<!-- Core-->
+<script type="text/javascript" src="aioneframework/assets/js/vendor.js"></script>
+<script type="text/javascript" src="aioneframework/assets/js/aione.js"></script>
+<!-- Google Analytics-->
+<script type="text/javascript" src="assets/js/ga.js"></script>
 </body>
 </html>
