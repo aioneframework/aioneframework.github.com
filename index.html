@@ -191,18 +191,6 @@ if ('serviceWorker' in navigator) {
   }).catch(function(error) {
     console.log('Registration failed with ' + error);
   });
-  
-  navigator.serviceWorker.onmessage = function (event) {
-    var message = JSON.parse(event.data);
-    
-    var isRefresh = message.type === 'refresh';
-    if (isRefresh) {
-      console.log('Received a message from service worker');
-    }
-    var isAsset = message.url.includes('asset');
-    console.log('Reloading page');
-    location.reload();
-  }
 }
 </script>
 
