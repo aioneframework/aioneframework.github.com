@@ -8,7 +8,7 @@ this.addEventListener('install', function(event) {
         'https://cdn.aioneframework.com/assets/images/aione-framework-logo-small.png',
         'https://cdn.aioneframework.com/assets/images/aione-framework-website-background.jpg',
         'https://cdn.aioneframework.com/assets/css/aione-lite.min.css',
-        'https://cdn.aioneframework.com/assets/js/aionefull.min.js'
+        'https://cdn.aioneframework.com/assets/js/aionefull.min.js',
         //'assets/js/ga.min.js',
         '/index.html'
       ]);
