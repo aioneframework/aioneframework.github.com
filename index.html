@@ -174,21 +174,21 @@
 <script type="text/javascript" src="aioneframework/assets/js/vendor.min.js"></script>
 <script type="text/javascript" src="aioneframework/assets/js/aione.min.js"></script>
 <!-- Google Analytics-->
-<script type="text/javascript" src="assets/js/ga.min.js"></script>
+<!-- <script type="text/javascript" src="assets/js/ga.min.js"></script> -->
 <script type="text/javascript">
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/serviceworker.js', { scope: '/' }).then(function(reg) {
     
     if(reg.installing) {
-      console.log('Service worker installing');
+      //console.log('Service worker installing');
     } else if(reg.waiting) {
-      console.log('Service worker installed');
+      //console.log('Service worker installed');
     } else if(reg.active) {
-      console.log('Service worker active');
+      //console.log('Service worker active');
     }
     
   }).catch(function(error) {
-    console.log('Registration failed with ' + error);
+    //console.log('Registration failed with ' + error);
   });
 }
 </script>
