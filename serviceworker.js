@@ -1,7 +1,7 @@
 var CACHE = 'cache-v1';
 
 this.addEventListener('install', function(event) {
-  console.log('The service worker is being installed');
+  //console.log('The service worker is being installed');
   event.waitUntil(
     caches.open(CACHE).then(function(cache) {
       return cache.addAll([
@@ -11,7 +11,7 @@ this.addEventListener('install', function(event) {
         '/assets/css/style.min.css',
         '/aioneframework/assets/js/vendor.min.js',
         '/aioneframework/assets/js/aione.min.js',
-        'assets/js/ga.min.js',
+        //'assets/js/ga.min.js',
         '/index.html'
       ]);
     })
@@ -19,7 +19,7 @@ this.addEventListener('install', function(event) {
 });
 
 this.addEventListener('fetch', function(event) {
-  console.log('The service worker is serving the asset.');
+  //console.log('The service worker is serving the asset.');
   event.respondWith(fromCache(event.request));
   
   event.waitUntil(
