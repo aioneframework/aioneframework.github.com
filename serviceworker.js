@@ -10,7 +10,7 @@ this.addEventListener('install', function(event) {
         'https://cdn.aioneframework.com/assets/css/aione-lite.min.css',
         'https://cdn.aioneframework.com/assets/js/aionefull.min.js',
         //'assets/js/ga.min.js',
-        '/index.html'
+        'index.html'
       ]);
     })
   );
