@@ -5,12 +5,10 @@ this.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE).then(function(cache) {
       return cache.addAll([
-        'https://aioneframework.com/assets/images/aione-framework-logo-small.png',
-        '/aioneframework/assets/css/aione.min.css',
-        'https://fonts.googleapis.com/css?family=Open+Sans:100,300,400',
-        '/assets/css/style.min.css',
-        '/aioneframework/assets/js/vendor.min.js',
-        '/aioneframework/assets/js/aione.min.js',
+        'https://cdn.aioneframework.com/assets/images/aione-framework-logo-small.png',
+        'https://cdn.aioneframework.com/assets/images/aione-framework-website-background.jpg',
+        'https://cdn.aioneframework.com/assets/css/aione-lite.min.css',
+        'https://cdn.aioneframework.com/assets/js/aionefull.min.js'
         //'assets/js/ga.min.js',
         '/index.html'
       ]);
