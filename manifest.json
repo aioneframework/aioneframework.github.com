@@ -6,10 +6,10 @@
     "display": "fullscreen",
     "start_url": ".",
     "short_name": "Aione",
-    "theme_color": "#FFFFFF",
+    "theme_color": "#e6e6f2",
     "description": "Aione framework code playground to edit html code and live preview the output",
     "orientation": "any",
-    "background_color": "#FFFFFF",
+    "background_color": "#168dc5",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
