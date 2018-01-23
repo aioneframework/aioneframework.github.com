@@ -47,21 +47,27 @@
 	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.min.css"> -->
 	<script type="application/ld+json">
 	{
-	  "@context": "http://schema.org",
-	  "@type": "Organization",
-	  "name": "Aione Framework",
-	  "url": "https://aioneframework.com/",
-	  "logo": "https://cdn.aioneframework.com/assets/images/aione-framework-logo-small.png",
-	  "contactPoint": [
-	    { "@type": "ContactPoint",
-	      "telephone": "+91-183-2401000",
-	      "contactType": "customer service"
-	    }
-	  ],
-	  "sameAs": [
-	    "https://www.facebook.com/AioneFramework",
-	    "https://twitter.com/AioneFramework"
-	    ]
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Aione Framework",
+		"url": "https://aioneframework.com/",
+		"logo": "https://cdn.aioneframework.com/assets/images/aione-framework-logo-small.png",
+		"contactPoint": [
+			{ 
+				"@type": "ContactPoint",
+				"telephone": "+91-183-2401000",
+				"contactType": "customer service"
+			}
+		],
+		"sameAs": [
+			"https://www.facebook.com/AioneFramework",
+			"https://twitter.com/AioneFramework"
+		],
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": "https://aioneframework.com/?q={search}",
+			"query-input": "required name=search"
+		}
 	}
 	</script>
 
