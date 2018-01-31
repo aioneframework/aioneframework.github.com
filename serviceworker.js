@@ -5,12 +5,27 @@ this.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE).then(function(cache) {
       return cache.addAll([
+        'https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600',
         'https://cdn.aioneframework.com/assets/images/aione-framework-logo-small.png',
         'https://cdn.aioneframework.com/assets/images/aione-framework-website-background.jpg',
+        //'https://cdn.aioneframework.com/assets/css/aione.css',
+        'https://cdn.aioneframework.com/assets/css/aione.min.css',
         'https://cdn.aioneframework.com/assets/css/aione-lite.min.css',
+        //'https://cdn.aioneframework.com/assets/js/aione.js',
+        'https://cdn.aioneframework.com/assets/js/aione.min.js',
+        'https://cdn.aioneframework.com/assets/js/vendor.js',
+        //'https://cdn.aioneframework.com/assets/js/vendor.min.js',
+        //'https://cdn.aioneframework.com/assets/js/vendorlite.js',
+        //'https://cdn.aioneframework.com/assets/js/vendorlite.min.js',
+        //'https://cdn.aioneframework.com/assets/js/aionefull.js',
         'https://cdn.aioneframework.com/assets/js/aionefull.min.js',
-        //'assets/js/ga.min.js',
-        'index.html'
+        'assets/js/ga.min.js',
+        'index.html',
+        'about.html',
+        'resources/index.html',
+        'play/index.html',
+        'docs/index.html',
+        'index.html',
       ]);
     })
   );
