@@ -22,10 +22,13 @@ this.addEventListener('install', function(event) {
         'assets/js/ga.min.js',
         'index.html',
         'about.html',
+        'team.html',
+        'partners.html',
+        'blog.html',
+        'contact.html',
         'resources/index.html',
         'play/index.html',
-        'docs/index.html',
-        'index.html',
+        'docs/index.html'
       ]);
     })
   );
