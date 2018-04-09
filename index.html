@@ -40,6 +40,7 @@
 	<link rel="icon" type="image/png" href="https://aioneframework.com/assets/images/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" type="image/png" href="https://aioneframework.com/assets/images/favicon-128.png" sizes="128x128" />
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400">
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 	<link rel="manifest" href="/manifest.json">
 	<link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css" >
@@ -75,6 +76,22 @@
 			margin-top: 13px;
 		  	color: #f2f2f2;
 		    font-size: 38px;
+		}
+		.heading {
+		    font-weight: 300;
+		    font-family: 'open sans';
+		    text-align: center;
+		    color: #333333;
+		}
+		.pc {
+		    line-height: 1.5;
+		    display: block;
+		    margin-bottom: 10px;
+		    font-size: 17px;
+		    text-align: center;
+		    color: #32373c;
+		    font-family: 'open sans';
+		    margin-top: 10px;
 		}
 	</style>
 	<script type="application/ld+json">
@@ -130,134 +147,206 @@
 											</h1>
 										</div>
 									</section>
-									<section>
+									<!-- <section>
 										<div class="ar p-50">
-										<h2 class="black aione-align-center font-weight-100">Features</h2>
-										<div class="ar">
-											<div class="ac l33 p-25 hover">
-											    <div class="ac l20 p-0 aione-align-center">
-											        <i class="fa fa-credit-card font-size-50" style="color: #367eb0;"></i>
-											    </div>
-											    <div class="ac l70">
-												    <div class="">
-													     <h5 class="grey darken-4 font-weight-600 m-0">Zero Cost</h5>
-													     <p class="grey darken-4 line-height-20">Free and Open Source</p>
-												   </div>
-										    	</div>
+											<h2 class="black aione-align-center font-weight-100">Features</h2>
+											<div class="ar">
+												<div class="ac l33 p-25 hover">
+												    <div class="ac l20 p-0 aione-align-center">
+												        <i class="fa fa-credit-card font-size-50" style="color: #367eb0;"></i>
+												    </div>
+												    <div class="ac l70">
+													    <div class="">
+														     <h5 class="grey darken-4 font-weight-600 m-0">Zero Cost</h5>
+														     <p class="grey darken-4 line-height-20">Free and Open Source</p>
+													   </div>
+											    	</div>
+												</div>
+												<div class="ac l33 p-25 hover">
+												    <div class="ac l20 p-0 aione-align-center">
+												        <i class="fa fa-users font-size-50" style="color: #367eb0;"></i>
+												    </div>
+												    <div class="ac l70">
+													    <div class="">
+														   <h5 class="grey darken-4 font-weight-600 m-0">Community Driven</h5>
+														   <p class="grey darken-4 line-height-20">Supported by various blogs and forums</p>
+													   </div>
+											    	</div>
+												</div>
+												<div class="ac l33 p-25 hover">
+												    <div class="ac l20 p-0 aione-align-center">
+												        <i class="fa fa-connectdevelop font-size-50" style="color: #367eb0;"></i>
+												    </div>
+												    <div class="ac l70">
+													    <div class="">
+														   <h5 class="grey darken-4 font-weight-600 m-0">Developer Friendly</h5>
+															<p class="grey darken-4 line-height-20"> It increases your speed of development.</p>
+													   </div>
+											    	</div>
+												</div>
 											</div>
-											<div class="ac l33 p-25 hover">
-											    <div class="ac l20 p-0 aione-align-center">
-											        <i class="fa fa-users font-size-50" style="color: #367eb0;"></i>
-											    </div>
-											    <div class="ac l70">
-												    <div class="">
-													   <h5 class="grey darken-4 font-weight-600 m-0">Community Driven</h5>
-													   <p class="grey darken-4 line-height-20">Supported by various blogs and forums</p>
-												   </div>
-										    	</div>
+											<div class="ar">
+												<div class="ac l33 p-25 hover">
+												    <div class="ac l20 p-0 aione-align-center">
+												        <i class="fa fa-times font-size-50" style="color: #367eb0;"></i>
+												    </div>
+												    <div class="ac l70">
+													    <div class="">														
+													    	<h5 class="grey darken-4 font-weight-600 m-0">Cross Platform</h5>
+															<p class="grey darken-4 line-height-20">It provides easy integration with other platforms</p>
+													   </div>
+											    	</div>
+												</div>
+												<div class="ac l33 p-25 hover">
+												    <div class="ac l20 p-0 aione-align-center">
+												        <i class="fa fa-columns font-size-50" style="color: #367eb0;"></i>
+												    </div>
+												    <div class="ac l70">
+													    <div class="">
+														   <h5 class="grey darken-4 font-weight-600 m-0">100 Column Grid System</h5>
+															<p class="grey darken-4 line-height-20"> It has 100-grid responsive layout making it the most flexible framework till date</p>
+													   </div>
+											    	</div>
+												</div>
+												<div class="ac l33 p-25 hover">
+												    <div class="ac l20 p-0 aione-align-center">
+												        <i class="fa fa-mobile font-size-50" style="color: #367eb0;"></i>
+												    </div>
+												    <div class="ac l70">
+													    <div class="">
+														   <h5 class="grey darken-4 font-weight-600 m-0">Mobile First</h5>
+													       <p class="grey darken-4 line-height-20">It is simple to use for making mobile first projects</p>
+													   </div>
+											    	</div>
+												</div>
 											</div>
-											<div class="ac l33 p-25 hover">
-											    <div class="ac l20 p-0 aione-align-center">
-											        <i class="fa fa-connectdevelop font-size-50" style="color: #367eb0;"></i>
-											    </div>
-											    <div class="ac l70">
-												    <div class="">
-													   <h5 class="grey darken-4 font-weight-600 m-0">Developer Friendly</h5>
-														<p class="grey darken-4 line-height-20"> It increases your speed of development.</p>
-												   </div>
-										    	</div>
+											<div class="ar">
+												<div class="ac l33 p-25 hover">
+												    <div class="ac l20 p-0 aione-align-center">
+												        <i class="fa fa-chrome font-size-50" style="color: #367eb0;"></i>
+												    </div>
+												    <div class="ac l70">
+													    <div class="">
+														   <h5 class="grey darken-4 font-weight-600 m-0">Browser Friendly</h5>
+															<p class="grey darken-4 line-height-20">It is consistent and compatible across all browsers.</p>
+													   </div>
+											    	</div>
+												</div>
+												<div class="ac l33 p-25 hover">
+												    <div class="ac l20 p-0 aione-align-center">
+												        <i class="fa fa-code font-size-50" style="color: #367eb0;"></i>
+												    </div>
+												    <div class="ac l70">
+													    <div class="">
+														   <h5 class="grey darken-4 font-weight-600 m-0">HTML Elements</h5>
+															<p class="grey darken-4 line-height-20">It provide styling for most HTML elements like forms, buttons , images and icons.</p>
+													   </div>
+											    	</div>
+												</div>
+												<div class="ac l33 p-25 hover">
+												    <div class="ac l20 p-0 aione-align-center">
+												        <i class="fa fa-retweet font-size-50" style="color: #367eb0;"></i>
+												    </div>
+												    <div class="ac l70">
+													    <div class="">
+														 <h5 class="grey darken-4 font-weight-600 m-0">Responsive</h5>
+														<p class="grey darken-4 line-height-20">Its responsive feature helps you dynamically test your website at runtime.</p>
+													   </div>
+											    	</div>
+												</div>
 											</div>
-										</div>
-										<div class="ar">
-											<div class="ac l33 p-25 hover">
-											    <div class="ac l20 p-0 aione-align-center">
-											        <i class="fa fa-times font-size-50" style="color: #367eb0;"></i>
-											    </div>
-											    <div class="ac l70">
-												    <div class="">														
-												    	<h5 class="grey darken-4 font-weight-600 m-0">Cross Platform</h5>
-														<p class="grey darken-4 line-height-20">It provides easy integration with other platforms</p>
-												   </div>
-										    	</div>
-											</div>
-											<div class="ac l33 p-25 hover">
-											    <div class="ac l20 p-0 aione-align-center">
-											        <i class="fa fa-columns font-size-50" style="color: #367eb0;"></i>
-											    </div>
-											    <div class="ac l70">
-												    <div class="">
-													   <h5 class="grey darken-4 font-weight-600 m-0">100 Column Grid System</h5>
-														<p class="grey darken-4 line-height-20"> It has 100-grid responsive layout making it the most flexible framework till date</p>
-												   </div>
-										    	</div>
-											</div>
-											<div class="ac l33 p-25 hover">
-											    <div class="ac l20 p-0 aione-align-center">
-											        <i class="fa fa-mobile font-size-50" style="color: #367eb0;"></i>
-											    </div>
-											    <div class="ac l70">
-												    <div class="">
-													   <h5 class="grey darken-4 font-weight-600 m-0">Mobile First</h5>
-												       <p class="grey darken-4 line-height-20">It is simple to use for making mobile first projects</p>
-												   </div>
-										    	</div>
-											</div>
-										</div>
-											
-										<div class="ar">
-											<div class="ac l33 p-25 hover">
-											    <div class="ac l20 p-0 aione-align-center">
-											        <i class="fa fa-chrome font-size-50" style="color: #367eb0;"></i>
-											    </div>
-											    <div class="ac l70">
-												    <div class="">
-													   <h5 class="grey darken-4 font-weight-600 m-0">Browser Friendly</h5>
-														<p class="grey darken-4 line-height-20">It is consistent and compatible across all browsers.</p>
-												   </div>
-										    	</div>
-											</div>
-											<div class="ac l33 p-25 hover">
-											    <div class="ac l20 p-0 aione-align-center">
-											        <i class="fa fa-code font-size-50" style="color: #367eb0;"></i>
-											    </div>
-											    <div class="ac l70">
-												    <div class="">
-													   <h5 class="grey darken-4 font-weight-600 m-0">HTML Elements</h5>
-														<p class="grey darken-4 line-height-20">It provide styling for most HTML elements like forms, buttons , images and icons.</p>
-												   </div>
-										    	</div>
-											</div>
-											<div class="ac l33 p-25 hover">
-											    <div class="ac l20 p-0 aione-align-center">
-											        <i class="fa fa-retweet font-size-50" style="color: #367eb0;"></i>
-											    </div>
-											    <div class="ac l70">
-												    <div class="">
-													 <h5 class="grey darken-4 font-weight-600 m-0">Responsive</h5>
-													<p class="grey darken-4 line-height-20">Its responsive feature helps you dynamically test your website at runtime.</p>
-												   </div>
-										    	</div>
-											</div>
-											
-										</div>
-									</div>
-									</section>
-									<section id="themes" class="themes" style="background-color: #168dc5;">
-										<div class="ar">
-											<div class="aione-title aione-align-center">
-											   <h2 class="white aione-align-center font-weight-100 pt-6p">Purpose</h2>
-									    	</div>
 									    </div>
-									    <div class="ar pb-40">
-											<div class="ac l15">
+									</section> -->
+									<section class="">
+                              		<div class="ar aione-align-center p-10p">
+                              			<div class="">
+                              				<h2 class="heading">
+											Powerful Feature
+											</h2>
+										    <p class="aione-align-center font-weight-300 pb-20" style="color: #82878C;font-size: 22.5px;">Limitless possibilities. What will you create?
+										    </p>
+                              			</div>
+                              			<div class="ac l100">
+                              				<div class="ar ">
+											   	<div class="ac s100 m50 l25 p-0">
+											   		<div class="aione-align-center aione-border-bottom aione-border-right" style="border-color: #eee;height: 200px;">
+											   			<i class="ion-paintbrush pt-38" style="display: block; margin-bottom: 1rem;color: #00A0D2;font-size: 3rem;"></i>
+											        	<p class="pc">Customizable<br> Designs</p>
+											   		</div>
+											     </div>
+												<div class="ac s100 m50 l25 p-0">
+													<div class="aione-align-center aione-border-bottom aione-border-right" style="border-color: #eee;height: 200px;">
+														<i class="ion-pricetag pt-38" style="display: block; margin-bottom: 1rem;color: #00A0D2;font-size: 3rem;"></i>
+											            <p class="pc">SEO<br>  Friendly</p>
+													</div>
+											       </div>
+												<div class="ac s100 m50 l25 p-0"> 
+													<div class="aione-align-center aione-border-bottom aione-border-right" style="border-color: #eee;height: 200px;">
+														<i class="ion-cube pt-38" style="display: block; margin-bottom: 1rem;color: #00A0D2;font-size: 3rem;"></i>
+												        <p class="pc">Responsive <br> Mobile sites</p>
+													</div>
+												</div>
+												<div class="ac s100 m50 l25 p-0" style="border-right:none;">
+													<div class="aione-align-center  aione-border-bottom" style="border-color: #eee;height: 200px;">
+													   <i class="ion-android-done-all pt-38" style="display: block; margin-bottom: 1rem;color: #00A0D2;font-size: 3rem;"></i>
+												       <p class="pc">High<br>  Performance</p>
+													</div>
+												 </div>
+										 </div>
+										   <div class="ac s100 m50 l25 p-0">
+									   		<div class="aione-align-center  aione-border-right " style="border-color: #eee;height: 200px;">
+									   			<i class="ion-woman pt-38" style="display: block; margin-bottom: 1rem;color: #00A0D2;font-size: 3rem;"></i>
+									        	<p class="pc">Manage<br> on the Go</p>
+									   		</div>
+									     </div>
+										<div class="ac s100 m50 l25 p-0">
+											<div class="aione-align-center aione-border-right" style="border-color: #eee;height: 200px;">
+												<i class="ion-link pt-38" style="display: block; margin-bottom: 1rem;color: #00A0D2;font-size: 3rem;"></i>
+									            <p class="pc">High<br>  Security</p>
 											</div>
-											<div class="ac l70 aione-align-center">
-									    		<p class="font-size-30 white font-weight-100">We will make it easier for you to develop your own customizable website.
-												</p>
+									       </div>
+										<div class="ac s100 m50 l25 p-0"> 
+											<div class="aione-align-center aione-border-right " style="border-color: #eee;height: 200px;">
+												<i class="ion-easel pt-38" style="display: block; margin-bottom: 1rem;color: #00A0D2;font-size: 3rem;"></i>
+										        <p class="pc">Media<br>  Management</p>
 											</div>
-											<div class="ac l15">
-									    		
+										</div>
+										<div class="ac s100 m50 l25 p-0" style="border-right:none;">
+											<div class="aione-align-center " style="border-color: #eee;height: 200px;">
+											   <i class="ion-android-checkbox-outline pt-38" style="display: block; margin-bottom: 1rem;color: #00A0D2;font-size: 3rem;"></i>
+										       <p class="pc">Easy and<br>  Accessible</p>
 											</div>
+										 </div>
+										 </div>
+										</div>
+		                             </section>
+									<section id="section_pwa" class="section-pwa">
+										<div class="ar p-50 aione-primary-bg-color">
+											<div class="aione-title">
+												<h2 class="aione-align-center font-weight-100 white">Progressive Web Apps</h2>
+												<h3 class="aione-align-center font-weight-100 white">Create feature rich Progressive Web Applications</h3>
+											</div>
+											<div>
+												
+											</div>
+										</div>
+									</section>
+									<section id="section_faq" class="section-faq">
+										<div class="ar p-50">
+											<div class="aione-title">
+												<h2 class="aione-align-center font-weight-100">FAQ's</h2>
+												<h3 class="aione-align-center font-weight-100">Frequently Asked Questions</h3>
+											</div>
+
+
+										</div>
+									</section>
+									<section id="section_themes" class="section-themes">
+										<div class="ar aione-primary-bg-color">
+											<div class="aione-title aione-align-center ">
+											   <h2 class="font-weight-100 pt-6p white">Purpose</h2>
+											   <h3 class="font-weight-100 white">We will make it easier for you to develop your own customizable website.</h3>
+									    	</div>
 									    </div>
 									</section>
 <!-- 
@@ -433,6 +522,18 @@
 		left:6%;
 		
 		background-color:transparent}
+}
+
+.aione-primary-color{
+}
+
+.aione-primary-bg-color{
+	background-color: #03a9f4;
+	background-color: #00A0D2;
+	background-color: #3d9fd7;
+	background-color: #168dc5;
+	background-color: #1570a6;
+	background-color: #0073aa;
 }
 </style>
 <script type="text/javascript">
