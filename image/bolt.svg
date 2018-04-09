@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="90.619px" height="100px" viewBox="9.217 0 90.619 100" enable-background="new 9.217 0 90.619 100" xml:space="preserve">
+<circle id="lock" fill="none" stroke="#FFFFFF" cx="31.652" cy="87.656" r="1.939"/>
+<circle id="camera" fill="none" stroke="#FFFFFF" cx="31.404" cy="19.283" r="0.723"/>
+<path id="bezel_2_" fill="none" stroke="#FDFDFD" d="M75.64,92.414c0,3.009-2.449,5.448-5.474,5.448h-33.34
+	c-3.023,0-5.471-2.439-5.471-5.448V10.008c0-3.007,2.449-5.447,5.471-5.447h33.343c3.023,0,5.473,2.439,5.473,5.447v82.406H75.64
+	L75.64,92.414z"/>
+<rect id="screen_2_" x="34.417" y="16.797" fill="#FFFFFF" width="38.133" height="67.823"/>
+<path id="speaker" fill="#FFFFFF" d="M57.585,13.306c0,0.214-0.151,0.39-0.336,0.39h-6.847c-0.182,0-0.333-0.176-0.333-0.39v-0.881
+	c0-0.214,0.151-0.39,0.333-0.39h6.847c0.185,0,0.336,0.175,0.336,0.39V13.306L57.585,13.306z"/>
+<circle id="camera_1_" fill="#FFFFFF" cx="53.837" cy="8.622" r="1.022"/>
+<ellipse id="lock_1_" fill="#FFFFFF" cx="53.511" cy="91.065" rx="3.42" ry="3.407"/>
+</svg>
