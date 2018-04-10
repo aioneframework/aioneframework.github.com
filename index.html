@@ -114,24 +114,80 @@
 		.bg-background{
 			background-color: #0073aa;
 		}
-		.paint:hover .paintbrush{
-			background-color: #0073aa;
-		    top: 0;
+		.paintbrush{
+			top: 0;
 		    width: 100%;
 		    color: #fff;
 		    min-height: 200px;
 		    position: absolute;
-		    display: block;
+		    background-color: #0073aa;
+		    display: none;
 		}
-		.paintbrush{
-			display: none;
-		}
+		.paint:hover .paintbrush{
+		  display: block;
 
+		}
+		.wrap{
+			height: 200px;
+			}
+		.front{
+			
+			padding: 20px;
+
+			}
+		.back{
+			height: 200px;
+			background-color: #0073aa;	
+			display: none;
+			padding: 20px;
+			color: white;
+		    line-height: 20px;
+		    letter-spacing: 1px;
+			}
+		.wrap:hover .back{
+			display: block;
+			}
+		.wrap:hover .front{
+			display: none
+			}
       
-		
+		.ar .child{
+			border-bottom:1px solid #ffffff;
+			border-right: 1px solid #ffffff;
+		}
+		.ar .child:nth-child(4n+4){
+			border-right: none;
+		}
+		.ar .child:nth-last-child(-n+4){
+			border-bottom: none;
+		}
 		/*.border-style-dashed{
 			border-bottom: 1px dashed #ffffff;
 		}*/
+		@media (min-width: 768px) and (max-width: 1024px) {
+  			.ar .child{
+			border-bottom:1px solid #ffffff;
+			border-right: 1px solid #ffffff;
+			}
+			.ar .child:nth-child(4n+2){
+				border-right: none;
+			}
+			.ar .child:nth-last-child(-n+4){
+				border-bottom:1px solid #ffffff;	
+			}
+  		}
+  		@media (min-width: 481px) and (max-width: 767px) {
+  			.ar .child{
+				border-bottom:1px solid #ffffff;
+			
+			}
+			.ar .child:nth-child(4n+1){
+				
+			}
+			.ar .child:nth-last-child(-n+2){
+				border-bottom:none;	
+			}
+		}
 	</style>
 	<script type="application/ld+json">
 	{
@@ -157,6 +213,7 @@
 			"query-input": "required name=search"
 		}
 	}
+	
 	</script>
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script>
@@ -295,139 +352,159 @@
 										</div>
 									</div>
 							    </div>
-							</section> -->
+							</section> --> 
 							<section class="">
                       		<div class="ar aione-align-center p-10p">
-                      			<div class="">
-                      				<h2 class="heading">
-									Powerful Feature
-									</h2>
-								    <p class="aione-align-center font-weight-300 pb-20 font-size-25" style="color: #82878C;">Limitless possibilities. What will you create?
-								    </p>
-                      			</div>
-                      			<div class="ac l100 mt-5p">
-                      				<div class="ar">
-									   	<div class="ac s100 m50 l25 p-0 position-relative">
-									   		<div class="aione-align-center aione-border-bottom aione-border-right position-relative paint" style="height: 200px;">
-									   			<i class="ion-paintbrush pt-38" style="display: block; margin-bottom: 1rem;
+                      			<h2 class="heading">
+								Powerful Feature
+								</h2>
+							    <p class="aione-align-center font-weight-300 pb-20 font-size-25" style="color: #82878C;">Limitless possibilities. What will you create?
+							    </p>
+                      				<div class="ac l100 mt-5p">
+	                      				<div class="ar">
+                      						<div class="ac s100 m50 l25 wrap p-0">
+												<div class="front aione-align-center aione-border-bottom aione-border-right">
+												<i class="ion-android-radio-button-off pt-38" style="display: block; margin-bottom: 1rem;
 									   			color: #0073aa;font-size: 3rem;"></i>
-									        	<p class="pc">Free and <br>Open Source</p>
-									   		</div>
-									   		<div class="paintbrush" style="">
-									     		<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
-									     	</div>
-									     </div>
-									     <!-- on hover div -->
-									     
-										<div class="ac s100 m50 l25 p-0">
-											<div class="aione-align-center aione-border-bottom aione-border-right" style="height: 200px;">
+									        	<p class="pc">Zero<br> Cost</p>
+												</div>
+												<div class="back">
+													<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
+												</div>
+											</div>	
+											<div class="ac s100 m50 l25 wrap p-0">
+												<div class="front aione-align-center aione-border-bottom aione-border-right">
 												<i class="ion-pricetag pt-38" style="display: block; margin-bottom: 1rem;
 												color: #0073aa;font-size: 3rem;"></i>
-									            <p class="pc">Community<br> Driven</p>
+									        	<p class="pc">Community<br> Driven</p>
+												</div>
+												<div class="back">
+													<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
+												</div>
 											</div>
-									       </div>
-										<div class="ac s100 m50 l25 p-0"> 
-											<div class="aione-align-center aione-border-bottom aione-border-right" style="height: 200px;">
+											<div class="ac s100 m50 l25 wrap p-0">
+												<div class="front aione-align-center aione-border-bottom aione-border-right">
 												<i class="ion-cube pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
-										        <p class="pc">Developer<br> Friendly</p>
+									        	<p class="pc">Developer<br> Friendly</p>
+												</div>
+												<div class="back">
+													<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
+												</div>
 											</div>
-										</div>
-										<div class="ac s100 m50 l25 p-0" style="border-right:none;">
-											<div class="aione-align-center  aione-border-bottom" style="height: 200px;">
-											   <i class="ion-android-done-all pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
-										       <p class="pc">Cross<br>  Platform</p>
+											<div class="ac s100 m50 l25 wrap p-0">
+												<div class="front aione-align-center aione-border-bottom ">
+												<i class="ion-android-done-all pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
+									        	 <p class="pc">Cross<br>  Platform</p>
+												</div>
+												<div class="back">
+													<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
+												</div>
+											</div>														
+									   
+								 		</div>
+								 		<div class="ac s100 m50 l25 wrap p-0">
+											<div class="front aione-align-center aione-border-right">
+											<i class="ion-code-working pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
+								        	 <p class="pc">HTML  <br>  Elements</p>
 											</div>
-										 </div>
+											<div class="back">
+												<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
+											</div>
+										</div>	
+								  		<div class="ac s100 m50 l25 wrap p-0">
+											<div class="front aione-align-center aione-border-right">
+											<i class="ion-ios-barcode pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
+								        	 <p class="pc">100 Column<br> Grid System </p>
+											</div>
+											<div class="back">
+												<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
+											</div>
+										</div>	
+										<div class="ac s100 m50 l25 wrap p-0">
+											<div class="front aione-align-center aione-border-right">
+											<i class="ion-iphone pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
+								        	 <p class="pc">Mobile<br>First </p>
+											</div>
+											<div class="back">
+												<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
+											</div>
+										</div>	
+										<div class="ac s100 m50 l25 wrap p-0">
+											<div class="front aione-align-center ">
+												 <i class="ion-social-chrome pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
+								        		 <p class="pc">Browser <br>Friendly</p>
+											</div>
+											<div class="back">
+												<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
+											</div>
+										</div>	
 								 </div>
-								   <div class="ac s100 m50 l25 p-0">
-							   		<div class="aione-align-center  aione-border-right " style="height: 200px;">
-							   			<i class="ion-woman pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
-							        	<p class="pc">Mobile <br>First</p>
-							   		</div>
-							     </div>
-								<div class="ac s100 m50 l25 p-0">
-									<div class="aione-align-center aione-border-right" style="height: 200px;">
-										<i class="ion-link pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
-							            <p class="pc">Browser<br>  Friendly</p>
-									</div>
-							       </div>
-								<div class="ac s100 m50 l25 p-0"> 
-									<div class="aione-align-center aione-border-right " style="height: 200px;">
-										<i class="ion-easel pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
-								        <p class="pc">HTML<br>  Elements</p>
-									</div>
-								</div>
-								<div class="ac s100 m50 l25 p-0" style="border-right:none;">
-									<div class="aione-align-center " style="height: 200px;">
-									   <i class="ion-android-checkbox-outline pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
-								       <p class="pc">responsive</p>
-									</div>
-								 </div>
-								 </div>
+
 								</div>
                              </section>
                            	
 							<section class="">
 							   <div class="ar aione-align-center p-10p bg-background">
-							      <div class="">
+							     
 							         <h2 class="white font-weight-100">
 							            Progressive Web Apps
 							         </h2>
 							         <p class="aione-align-center font-weight-300 pb-20 white font-size-25">Create feature rich Progressive Web Applications</p>
-							      </div>
-							      <div class="ac l100 mt-5p">
-							         <div class="ar">
-							            <div class="ac s100 m50 l25 p-0">
-							               <div class="aione-align-center aione-border-bottom aione-border-right pt-60 height" style="">
+							     	<div class="ar">
+							            <div class="ac s100 m50 l25 p-0 child">
+							               <div class="aione-align-center pt-60 height" style="">
 							                  <img class="small-img" src="image/installable12.svg" alt="Installable Progressive Web Application">
 							                  <p class="pg">Installable</p>
 							               </div>
 							            </div>
-							            <div class="ac s100 m50 l25 p-0">
-							               <div class="aione-align-center aione-border-bottom aione-border-right pt-60 height">
+							            <div class="ac s100 m50 l25 p-0 child">
+							               <div class="aione-align-center pt-60 height">
 							                  <img class="small-img" src="image/star.svg" alt="Installable Progressive Web Application">
 							                  <p class="pg">Lightning <br> fast</p>
 							               </div>
 							            </div>
-							            <div class="ac s100 m50 l25 p-0">
-							               <div class="aione-align-center aione-border-bottom pt-60 height" style="">
+							            <div class="ac s100 m50 l25 p-0 child">
+							               <div class="aione-align-center pt-60 height" style="">
 							                 <img class="small-img" src="image/wifiss.svg" alt="Installable Progressive Web Application">
 							                  <p class="pg">Works <br> offline </p>
 							               </div>
 							            </div>
-							            <div class="ac s100 m50 l25 p-0">
-							            <div class="aione-align-center aione-border-left aione-border-bottom pt-60 height" style="">
+							            <div class="ac s100 m50 l25 p-0 child">
+							            <div class="aione-align-center pt-60 height" style="">
 							              <img class="small-img" src="image/lightweight.svg" alt="Installable Progressive Web Application">
 							               <p class="pg">Lightweight <br> app</p>
 							            </div>
 							         </div>
-							         </div>
-							         
-							         <div class="ac s100 m50 l25 p-0" style="">
-							               <div class="aione-align-center aione-border-right pt-60 height" style="">
+							         <div class="ac s100 m50 l25 p-0 child" style="">
+							               <div class="aione-align-center pt-60 height" style="">
 							               	<img class="small-img" src="image/notification2.svg" alt="Installable Progressive Web Application">
 							                  <p class="pg">Web push <br> notifications</p>
 							               </div>
 							            </div>
-							         <div class="ac s100 m50 l25 p-0">
-							            <div class="aione-align-center pt-60 height aione-border-right" style="">
+							         <div class="ac s100 m50 l25 p-0 child">
+							            <div class="aione-align-center pt-60 height " style="">
 							              <img class="small-img" src="image/linkable.svg" alt="Installable Progressive Web Application">
 							               <p class="pg">Linkable & <br>Discoverable</p>
 							            </div>
 							         </div>
-							          <div class="ac s100 m50 l25 p-0">
-							            <div class="aione-align-center pt-60 aione-border-right height">
+							          <div class="ac s100 m50 l25 p-0 child">
+							            <div class="aione-align-center pt-60 height">
 							               <img class="small-img" src="image/bolt.svg" alt="Installable Progressive Web Application">
 							               <p class="pg">App style <br>interactions</p>
 							            </div>
 							         </div>
-							         <div class="ac s100 m50 l25 p-0" style="border-right:none;">
+							         <div class="ac s100 m50 l25 p-0 child" style="">
 							            <div class="aione-align-center pt-60 height">
 							               <img class="small-img" src="image/bolt.svg" alt="Installable Progressive Web Application">
 							               <p class="pg">Easy and<br> Accessible</p>
 							            </div>
-							         </div> 
-							      </div>
+							         </div>
+
+							         </div>
+							    
+							         
+							           
+							    
 							   </div>
 							</section>
 						<!-- <section id="section_pwa" class="section-pwa">
