@@ -137,7 +137,56 @@
 		.wrap:hover .front{
 			display: none
 			}
-      
+		/*powerful feature*/
+		.ar .subchild{
+			border-bottom:1px solid #e8e8e8;
+			border-right :1px solid #e8e8e8;
+		}
+		.ar .subchild:nth-child(4n+4){
+			border-right: none;
+		}
+		.ar .subchild:nth-last-child(-n+4){
+			border-bottom: none;
+		}
+		
+		@media (min-width: 768px) and (max-width: 1024px) {
+  			.ar .subchild{
+				border-bottom:1px solid #e8e8e8;
+			
+			}
+			.ar .subchild:nth-child(n){
+				border-right:none;
+			}
+			.ar .subchild:nth-last-child(n){
+				border-bottom:1px solid #e8e8e8;	
+			}
+		}
+  		@media (min-width: 481px) and (max-width: 767px) {
+  			.ar .subchild{
+				border-bottom:none;
+			
+			}
+			.ar .subchild:nth-child(n){
+				border-right:none;
+			}
+			.ar .subchild:nth-last-child(-n+2){
+				border-bottom:1px solid #e8e8e8;	
+			}
+		}
+		@media only screen and (min-width: 310px) and (max-width: 766px) {
+			.ar .subchild{
+				border-bottom:none;
+			
+			}
+			.ar .subchild:nth-child(n){
+				border-right:none;
+			}
+			.ar .subchild:nth-last-child(-n+2){
+				border-bottom:none;	
+			}
+		}
+		/*End powerful feature css*/
+
 		.ar .child{
 			border-bottom:1px solid #ffffff;
 			border-right: 1px solid #ffffff;
@@ -148,19 +197,17 @@
 		.ar .child:nth-last-child(-n+4){
 			border-bottom: none;
 		}
-		/*.border-style-dashed{
-			border-bottom: 1px dashed #ffffff;
-		}*/
+		
 		@media (min-width: 768px) and (max-width: 1024px) {
   			.ar .child{
-				border-bottom:none;
+				border-bottom:1px solid #ffffff;
 			
 			}
 			.ar .child:nth-child(n){
 				border-right:none;
 			}
-			.ar .child:nth-last-child(-n+2){
-				border-bottom:none;	
+			.ar .child:nth-last-child(n){
+				border-bottom:1px solid #ffffff;	
 			}
 		}
   		@media (min-width: 481px) and (max-width: 767px) {
@@ -175,6 +222,19 @@
 				border-bottom:none;	
 			}
 		}
+		@media only screen and (min-width: 310px) and (max-width: 766px) {
+			.ar .child{
+				border-bottom:none;
+			
+			}
+			.ar .child:nth-child(n){
+				border-right:none;
+			}
+			.ar .child:nth-last-child(-n+2){
+				border-bottom:none;	
+			}
+		}
+
 	</style>
 	<script type="application/ld+json">
 	{
@@ -340,8 +400,8 @@
 									</div>
 							    </div>
 							</section> --> 
-							<section class="">
-                      		<div class="ar aione-align-center p-10p">
+						 <section class="">
+                      		 <div class="ar aione-align-center p-10p">
                       			<h2 class="heading">
 								Powerful Feature
 								</h2>
@@ -349,18 +409,18 @@
 							    </p>
                       				<div class="ac l100 mt-5p">
 	                      				<div class="ar">
-                      						<div class="ac s100 m50 l25 wrap p-0">
-												<div class="front aione-align-center aione-border-bottom aione-border-right">
-												<i class="ion-android-radio-button-off pt-38" style="display: block; margin-bottom: 1rem;
-									   			color: #0073aa;font-size: 3rem;"></i>
-									        	<p class="pc">Zero<br> Cost</p>
+	                      					<div class="ac s100 m50 l25 wrap p-0 subchild">
+												<div class="front aione-align-center">
+													<i class="ion-android-radio-button-off pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;">
+										   			</i>
+										        	<p class="pc">Zero<br> Cost</p>
 												</div>
 												<div class="back">
 													<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
 												</div>
-											</div>	
-											<div class="ac s100 m50 l25 wrap p-0">
-												<div class="front aione-align-center aione-border-bottom aione-border-right">
+											</div>
+											<div class="ac s100 m50 l25 wrap p-0 subchild">
+												<div class="front aione-align-center">
 												<i class="ion-pricetag pt-38" style="display: block; margin-bottom: 1rem;
 												color: #0073aa;font-size: 3rem;"></i>
 									        	<p class="pc">Community<br> Driven</p>
@@ -369,8 +429,8 @@
 													<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
 												</div>
 											</div>
-											<div class="ac s100 m50 l25 wrap p-0">
-												<div class="front aione-align-center aione-border-bottom aione-border-right">
+											<div class="ac s100 m50 l25 wrap p-0 subchild">
+												<div class="front aione-align-center ">
 												<i class="ion-cube pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
 									        	<p class="pc">Developer<br> Friendly</p>
 												</div>
@@ -378,8 +438,8 @@
 													<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
 												</div>
 											</div>
-											<div class="ac s100 m50 l25 wrap p-0">
-												<div class="front aione-align-center aione-border-bottom ">
+											<div class="ac s100 m50 l25 wrap p-0 subchild">
+												<div class="front aione-align-center ">
 												<i class="ion-android-done-all pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
 									        	 <p class="pc">Cross<br>  Platform</p>
 												</div>
@@ -387,10 +447,8 @@
 													<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
 												</div>
 											</div>														
-									   
-								 		</div>
-								 		<div class="ac s100 m50 l25 wrap p-0">
-											<div class="front aione-align-center aione-border-right">
+									   <div class="ac s100 m50 l25 wrap p-0 subchild">
+											<div class="front aione-align-center ">
 											<i class="ion-code-working pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
 								        	 <p class="pc">HTML  <br>  Elements</p>
 											</div>
@@ -398,8 +456,8 @@
 												<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
 											</div>
 										</div>	
-								  		<div class="ac s100 m50 l25 wrap p-0">
-											<div class="front aione-align-center aione-border-right">
+								  		<div class="ac s100 m50 l25 wrap p-0 subchild">
+											<div class="front aione-align-center ">
 											<i class="ion-ios-barcode pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
 								        	 <p class="pc">100 Column<br> Grid System </p>
 											</div>
@@ -407,8 +465,8 @@
 												<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
 											</div>
 										</div>	
-										<div class="ac s100 m50 l25 wrap p-0">
-											<div class="front aione-align-center aione-border-right">
+										<div class="ac s100 m50 l25 wrap p-0 subchild">
+											<div class="front aione-align-center">
 											<i class="ion-iphone pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
 								        	 <p class="pc">Mobile<br>First </p>
 											</div>
@@ -416,7 +474,7 @@
 												<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
 											</div>
 										</div>	
-										<div class="ac s100 m50 l25 wrap p-0">
+										<div class="ac s100 m50 l25 wrap p-0 subchild">
 											<div class="front aione-align-center ">
 												 <i class="ion-social-chrome pt-38" style="display: block; margin-bottom: 1rem;color: #0073aa;font-size: 3rem;"></i>
 								        		 <p class="pc">Browser <br>Friendly</p>
@@ -424,16 +482,17 @@
 											<div class="back">
 												<p class="p-20 aione-align-justify">Turnaround time is less than 15 minutes. No coding required, just update the given code in your website & let it play.</p>
 											</div>
-										</div>	
+										</div>
+								 		</div>
+								 			
 								 </div>
 
 								</div>
-                             </section>
+                             </section> 
                            	
 							<section class="">
 							   <div class="ar aione-align-center p-10p bg-background">
-							     
-							         <h2 class="white font-weight-100">
+							     <h2 class="white font-weight-100">
 							            Progressive Web Apps
 							         </h2>
 							         <p class="aione-align-center font-weight-300 pb-20 white font-size-25">Create feature rich Progressive Web Applications</p>
@@ -488,11 +547,7 @@
 							         </div>
 
 							         </div>
-							    
-							         
-							           
-							    
-							   </div>
+							     </div>
 							</section>
 						<!-- <section id="section_pwa" class="section-pwa">
 								<div class="ar p-50 aione-primary-bg-color">
