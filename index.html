@@ -114,19 +114,6 @@
 		.bg-background{
 			background-color: #0073aa;
 		}
-		.paintbrush{
-			top: 0;
-		    width: 100%;
-		    color: #fff;
-		    min-height: 200px;
-		    position: absolute;
-		    background-color: #0073aa;
-		    display: none;
-		}
-		.paint:hover .paintbrush{
-		  display: block;
-
-		}
 		.wrap{
 			height: 200px;
 			}
@@ -166,23 +153,23 @@
 		}*/
 		@media (min-width: 768px) and (max-width: 1024px) {
   			.ar .child{
-			border-bottom:1px solid #ffffff;
-			border-right: 1px solid #ffffff;
-			}
-			.ar .child:nth-child(4n+2){
-				border-right: none;
-			}
-			.ar .child:nth-last-child(-n+4){
-				border-bottom:1px solid #ffffff;	
-			}
-  		}
-  		@media (min-width: 481px) and (max-width: 767px) {
-  			.ar .child{
-				border-bottom:1px solid #ffffff;
+				border-bottom:none;
 			
 			}
-			.ar .child:nth-child(4n+1){
-				
+			.ar .child:nth-child(n){
+				border-right:none;
+			}
+			.ar .child:nth-last-child(-n+2){
+				border-bottom:none;	
+			}
+		}
+  		@media (min-width: 481px) and (max-width: 767px) {
+  			.ar .child{
+				border-bottom:none;
+			
+			}
+			.ar .child:nth-child(n){
+				border-right:none;
 			}
 			.ar .child:nth-last-child(-n+2){
 				border-bottom:none;	
