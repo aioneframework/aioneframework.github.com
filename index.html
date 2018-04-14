@@ -185,38 +185,38 @@
          .ar .child:nth-last-child(-n+4){
          border-bottom: none;
          }
-         @media (min-width: 768px) and (max-width: 1024px) {
+      @media (min-width: 768px) and (max-width: 1024px) {
+            .ar .child{
+            border-bottom:1px solid #ffffff;
+            }
+            .ar .child:nth-child(n){
+            border-right:none;
+            }
+            .ar .child:nth-last-child(n){
+            border-bottom:1px solid #ffffff;	
+            }
+            }
+      @media (min-width: 481px) and (max-width: 767px) {
          .ar .child{
-         border-bottom:1px solid #ffffff;
+            border-bottom:none;
+            }
+            .ar .child:nth-child(n){
+            border-right:none;
+            }
+            .ar .child:nth-last-child(-n+2){
+            border-bottom:none;	
+            }
          }
-         .ar .child:nth-child(n){
-         border-right:none;
-         }
-         .ar .child:nth-last-child(n){
-         border-bottom:1px solid #ffffff;	
-         }
-         }
-         @media (min-width: 481px) and (max-width: 767px) {
+      @media only screen and (min-width: 310px) and (max-width: 766px) {
          .ar .child{
-         border-bottom:none;
-         }
-         .ar .child:nth-child(n){
-         border-right:none;
-         }
-         .ar .child:nth-last-child(-n+2){
-         border-bottom:none;	
-         }
-         }
-         @media only screen and (min-width: 310px) and (max-width: 766px) {
-         .ar .child{
-         border-bottom:none;
-         }
-         .ar .child:nth-child(n){
-         border-right:none;
-         }
-         .ar .child:nth-last-child(-n+2){
-         border-bottom:none;	
-         }
+            border-bottom:none;
+            }
+            .ar .child:nth-child(n){
+            border-right:none;
+            }
+            .ar .child:nth-last-child(-n+2){
+            border-bottom:none;	
+            }
          }
       </style>
       <script type="application/ld+json">
