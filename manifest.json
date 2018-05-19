@@ -4,7 +4,7 @@
     "name": "Aione Framework",
     "scope": "/",
     "display": "fullscreen",
-    "start_url": ".",
+    "start_url": "/index.html",
     "short_name": "Aione",
     "theme_color": "#e6e6f2",
     "description": "Aione framework code playground to edit html code and live preview the output",
