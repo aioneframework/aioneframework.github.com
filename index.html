@@ -3,6 +3,7 @@
    <head>
       <title>Aione Framework | Responsive CSS Framework</title>
       <!-- Aione framework website, 3D websites, Grid system -->
+      <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="identifier-url" content="https://aioneframework.com/" />
       <meta name="title" content="Aione Framework | Responsive CSS Framework" />
@@ -42,14 +43,14 @@
       <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400"> -->
       <!-- Theme Styles and Scripts-->
       <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.min.css"> -->
-      <style type="text/css">
+      <style>
          .height{
          height: 200px;
          }
          .hover:hover{
          border:1px solid #e8e8e8;
          padding: 24px;
-         background-color: #F2F2F2;}
+         background-color: #F2F2F2;
          }
          .mission:after{
          content: '';
@@ -905,12 +906,12 @@
          </div>
       </div>
       <!-- Core-->
-      <script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/vendor.min.js"></script>
-      <script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/aione.min.js"></script>
+      <script src="https://cdn.aioneframework.com/assets/js/vendor.min.js"></script>
+      <script src="https://cdn.aioneframework.com/assets/js/aione.min.js"></script>
       <!-- Google Analytics-->
-      <script type="text/javascript" src="assets/js/ga.min.js"></script>
-      <style type="text/css">
-         .tabs.tabs-transparent .tab a{color:#333}.page-home .aione-header{position:absolute;top:0;width:100%;z-index:9999;background-color:transparent}.aione-nav.horizontal{border-bottom:none}.aione-nav ul li a{padding:0 12px;font-size:18px}.aione-main{padding-top:0}.aione-page-content{margin:0;min-height:200px}.aione-footer{margin:0;border-top:none}.aione-footer.dark{background-color:#23282d}.aione-copyright{margin:0;border-top:none}.aione-copyright.dark{background-color:#121519}.oxo-color{color:#168dc5}.oxo-color:hover{color:#1570a6}.primary-color{color:#1570a6}.secondary-color{color:#414043}.section-ilivedesign{background-image:url(https://cdn.aioneframework.com/assets/images/oxo_bg.svg);background-repeat:repeat;background-position:0 0;background-color:#fff}.section-ilivedesign .aione-icon.animated{display:inline-block;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;animation-iteration-count:infinite}
+      <script src="assets/js/ga.min.js"></script>
+      <style >
+         .tabs.tabs-transparent .tab a{color:#333333;}.page-home .aione-header{position:absolute;top:0;width:100%;z-index:9999;background-color:transparent}.aione-nav.horizontal{border-bottom:none}.aione-nav ul li a{padding:0 12px;font-size:18px}.aione-main{padding-top:0}.aione-page-content{margin:0;min-height:200px}.aione-footer{margin:0;border-top:none}.aione-footer.dark{background-color:#23282d}.aione-copyright{margin:0;border-top:none}.aione-copyright.dark{background-color:#121519}.oxo-color{color:#168dc5}.oxo-color:hover{color:#1570a6}.primary-color{color:#1570a6}.secondary-color{color:#414043}.section-ilivedesign{background-image:url(https://cdn.aioneframework.com/assets/images/oxo_bg.svg);background-repeat:repeat;background-position:0 0;background-color:#fff}.section-ilivedesign .aione-icon.animated{display:inline-block;-webkit-animation-iteration-count:infinite;-moz-animation-iteration-count:infinite;animation-iteration-count:infinite}
          .intro{
          position:relative;
          min-height:450px;height:100vh;background-color:#e6e6f2;background-image:url(https://cdn.aioneframework.com/assets/images/aione-framework-website-background.jpg);background-position:right bottom;background-size:contain;background-repeat:no-repeat}
@@ -919,21 +920,21 @@
          top:30%;
          width:65%;
          left:6%;
-         background-color:transparent}
+         background-color:transparent
          }
          .aione-primary-color{
+            color: #1570a6;
          }
          .aione-primary-bg-color{
          background-color: #03a9f4;
-         background-color: ##ffffff
-         ;
+         background-color: #ffffff;
          background-color: #3d9fd7;
          background-color: #168dc5;
          background-color: #1570a6;
          background-color: #0073aa;
          }
          .aione-item-header {
-         background-color: #eee;
+         background-color: #EEEEEE;
          color: #444;
          cursor: pointer;
          padding: 18px;
@@ -946,10 +947,10 @@
          font-weight: 400;
          }
          .aione-item-header:hover {
-         background-color: #ccc; 
+         background-color: #CCCCCC; 
          }
       </style>
-      <script type="text/javascript">
+      <script >
          if ('serviceWorker' in navigator) {
            navigator.serviceWorker.register('/serviceworker.js', { scope: '/' }).then(function(reg) {
              
